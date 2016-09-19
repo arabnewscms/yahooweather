@@ -22,4 +22,6 @@
             "YahooWeather\\Weather\\":"/src"
         },
         "minimum-stability": "dev"
+    }
+
 }
