@@ -61,7 +61,7 @@ Like `egypt` and `ar`
  dd($weather);
  ```
  
- you can get more and tests whti yahoo console https://developer.yahoo.com/yql/console
+ you can get more and tests with yahoo console https://developer.yahoo.com/yql/console
 
  just that :) 
  enjoy your time 
