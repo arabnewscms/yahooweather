@@ -4,6 +4,7 @@
     "description": "A simple package to Get yahoo weather created By PHPAnonymous",
     "keywords": ["Yahoo","YQL","Weather","phpanonymous","phpanonymous.com","laravel","lumen"],
     "homepage": "http://phpanonymous.com",
+    "version":"1.0",
     "license": "MIT",
     "authors": [
         {
