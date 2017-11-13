@@ -1,5 +1,11 @@
 # YahooWeather
 A simple package to Get Yahoo weather by using YQL created By PHPAnonymous
+
+# Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Example Controller](#example-controller)
+
 ## Installation
 1. Using composer: `composer require yahooweather/weather:dev-master `
 
@@ -76,5 +82,6 @@ For more advanced queries, you can use the custom query function:
  
 Check the Yahoo YQL Console for more information on YQL queries: https://developer.yahoo.com/yql/console
 
-That's it :) 
+That's it :)
+
 Enjoy
