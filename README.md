@@ -1,9 +1,9 @@
 # YahooWeather
 A simple package to Get Yahoo weather by using YQL created By PHPAnonymous
 ## Installation
-1. Run this command from you composer ` composer require yahooweather/weather:dev-master `
+1. Using composer: `composer require yahooweather/weather:dev-master `
 
-2. Put provider class on your `config/app.php` file
+2. Add the Provider class to your `config/app.php` file
 
 ```php 
    YahooWeather\Weather\PHPAnonymousYahooWeather::class,
@@ -12,17 +12,17 @@ A simple package to Get Yahoo weather by using YQL created By PHPAnonymous
 3. Add this line to the the aliases array 
 
 ```php 
-        'YahooWeather'       => YahooWeather\Weather\AnonyControllerYahooWeather::class,
+        'YahooWeather' => YahooWeather\Weather\AnonyControllerYahooWeather::class,
 ```
 
 ## Usage
 
-3. In your controller, make sure to add the following line:
+4. In your controller, make sure to add the following line:
 ```php
 use YahooWeather;
 ```
 
-4. Use the `YahooWeather` Class. It takes two parameters, a country and a language. 
+5. Use the `YahooWeather` Class. It takes two parameters, a country and a language. 
 
 ```php
  YahooWeather::Country('egypt','ar');
@@ -67,7 +67,6 @@ class WeatherController extends Controller
 }
 ```
 
-```php
 For more advanced queries, you can use the custom query function:
  
  ```php 
