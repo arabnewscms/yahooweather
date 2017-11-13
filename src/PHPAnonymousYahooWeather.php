@@ -22,7 +22,7 @@ class PHPAnonymousYahooWeather extends ServiceProvider
      */
     public function register()
     {
-          $this->app['YahooWeather'] = $this->app->share(function($app)
+          $this->app['YahooWeather'] = $this->app->singleton("AnonyControllerYahooWeather", function($app)
             {
                 return new AnonyControllerYahooWeather();
             });
