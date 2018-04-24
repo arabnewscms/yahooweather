@@ -67,6 +67,16 @@ class AnonyControllerYahooWeather extends Controller{
          return ['high'=>$high,'low'=>$low,'image'=>$image,'name'=>$country,'description'=>$description,'results'=>$phpObj->query->results];
 
 	 } 
-
-
+	
+         public static function raw_query($query){
+                $BASE_URL = "http://query.yahooapis.com/v1/public/yql";
+                $yql_query = $query;
+                $yql_query_url = $BASE_URL . "?q=" . urlencode($yql_query) . "&format=json";
+                            // Make call with cURL
+            $session = curl_init($yql_query_url);
+            curl_setopt($session, CURLOPT_RETURNTRANSFER,true);
+            $json = curl_exec($session);
+            $phpObj =  json_decode($json);
+            return $phpObj;
+         }
 }
